@@ -16,11 +16,14 @@ Refer to https://github.com/rails/rails/blob/master/activesupport/lib/active_sup
 Test It
 =======
 
-# Just start the server, and go to localhost:3000
+1. Just start the server, and go to localhost:3000
+
 
     rails start
 
-# Refresh the page several times, you will find that the Class Object Id & Count are the same for both class.
-# Modify HomeController class file (could simply touch it to change the file modified time), refresh the page again, you will find that In Memory Counter keep the same Class Object Id & Count increased, while Counter got reset.
+
+2. Refresh the page several times, you will find that the Class Object Id & Count are the same for both class.
+3. Modify HomeController class file (could simply touch it to change the file modified time), refresh the page again, you will find that In Memory Counter keep the same Class Object Id & Count increased, while Counter got reset.
+
 
     $ touch app/controllers/home_controller.rb
